@@ -1,0 +1,144 @@
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    font-family: 'Aleo', serif;
+}
+a{
+    display: inline-block;
+    color: #ffffff;
+}
+a::after{
+    display: block;
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: red; 
+    transition: width 0.4s ease-in-out;
+    opacity: .5;
+}
+a:hover::after{
+    transition-duration: .5s;
+    width: 100%;
+}
+h1{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 96px;
+    color: #ffffff;
+}
+.button{
+    transition: .8s;
+}
+.button:hover{
+    background-color: grey;
+    opacity: 0.5;
+}
+.wrapper{
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header{
+    background: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background{
+    background-color: #F2785C;
+    opacity: 70%;
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.navigation {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 25px 0 24px 0;
+    z-index: 1;
+    font-family: 'Red Hat Text', sans-serif;
+}
+.logo {
+    background-image: url(./img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 158px;
+}
+.nav{
+    margin-right: 196px;
+}
+.nav>ul {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_list-item{
+    margin-right: 42px;
+}
+.nav_list-item:last-child{
+    margin-right: 0;
+}
+.button_header{
+    padding: 10px 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    background-color: #0D606F;
+    border-radius: 10px;
+}
+.search {
+    max-width: 892px;
+    padding: 30px 0 255px 0;
+}
+.search>h1{
+    margin-bottom: 33px;
+}
+.search>p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #ffffff;
+    margin-bottom: 46px;
+}
+form{
+    position: relative;
+}
+.input{
+    display: block;
+    padding: 32px 291px 32px 41px;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    width: 100%;
+    border-radius: 16px;
+    background-color: #ffffff;
+    opacity: 0.7;
+    color: #F2785C;
+}
+.search_button{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    background-color: #0D606F;
+    padding: 12.5px 32.5px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 18px;
+}
