@@ -292,6 +292,7 @@ form {
     background: #ffffff96;
     text-align: center;
     margin-bottom: 80px;
+    position: relative;
 }
 .btn, .slaider_wrapper, .dot {
     display: inline-block;
@@ -302,12 +303,26 @@ form {
     background-color: #F2785C;
     color: #ffffff;
     border: 1px solid rebeccapurple;
+    opacity: .5;
 }
 .btn:hover, .dot:hover, .dot:active {
     background-color: red;
 }
 .btn:active {
     background-color: #F2785C;
+}
+.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-100%);
+    z-index: 40;
+}
+.prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 40;
 }
 .slaider_wrapper {
     width: 800px;
@@ -319,8 +334,11 @@ form {
     display: flex;
     position: relative;
     left: 0;
+    transition: .3s;
 }
 .slider_line img {
+    display: block;
+    max-width: 100%;
     /* margin: 0 30px; */
 }
 .dot_wrapper {
